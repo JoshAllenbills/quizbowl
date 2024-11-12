@@ -1,6 +1,6 @@
 const submitButton = document.querySelector('.submit');
 const header = document.querySelector('.header');
-const score = score += 1; document.querySelector('.score').textContent = score;
+const score = document.querySelector('.score');
 const questions = document.querySelector('.questions');
 const inputContainer = document.querySelector('.input-container');
 const outputContainer = document.querySelector('.output-container');
@@ -12,17 +12,17 @@ submitSwitch.addEventListener("click", () => {
     document.querySelector('.questions').textContent = questionsArray[currentQuestionIndex];
 });
 
-
-
 const questionsArray = [
-    "How old is ben?",
-    "What is 404 x 30 / 5?",
-    "What is my first name backwards?"
+    "How old is Jeffery?",
+    "What is 938 x 54/ 24?",
+    "What is my last name spelt backwards?",
+    "What is the capital of croatia?",
+    "What is 2 + 24?",
+    "Name a not color.",
+    "What is the largest planet in your solar system?",
+    "What is the square root of 85?",
+    "Who wrote 'To Kill a Mockingbird'?",
+    "What is the boiling point of water in Celsius?"
 ];
 
-const answersArray = [
-    "5",
-    "3232",
-    "niloc"
-];
-document.querySelector('.questions').textContent = questionsArray[currentQuestionIndex];
+let currentQuestionIndex = 0;
